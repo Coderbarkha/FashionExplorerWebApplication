@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Dashboard</title>
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+ <!-- Header Section -->
+ <header class="header">
+    <div class="logo">
+      <h1>Fashion Explorer</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br><br><br><br>
+    <div id="dashboard">
+        <h1>Fashion Dashboard</h1>
+        <br><br><br>
+        <!-- Sales Chart -->
+        <div>
+            <h2>Sales Chart</h2>
+            <canvas id="salesChart" width="400" height="200"></canvas>
+        </div>
+        <br><br><br>
+        <!-- Popularity Chart -->
+        <div>
+            <h2>Popularity Chart</h2>
+            <canvas id="popularityChart" width="400" height="200"></canvas>
+        </div>
+        <br><br><br>
+        <div>
+            <h2>Trend Analysis</h2>
+            <canvas id="trendChart" width="400" height="200"></canvas>
+        </div>
+        <br><br><br>
+        <div>
+            <h2>Category Breakdown</h2>
+            <canvas id="categoryChart" width="400" height="200"></canvas>
+        </div>
+        <br><br><br>
+        <div>
+            <h2>Customer Ratings</h2>
+            <canvas id="ratingsChart" width="400" height="200"></canvas>
+        </div>      
+        <br><br><br>
+        <div>
+            <h2>Top Products</h2>
+            <canvas id="topProductsChart" width="400" height="200"></canvas>
+        </div>
+        <br><br><br>
+        <div>
+            <h2>Revenue vs. Units Sold</h2>
+            <canvas id="bubbleChart" width="400" height="200"></canvas>
+        </div>
+                  
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>About Us</h2>
+        <p>
+          Fashion Explorer is your ultimate destination for exploring the latest
+          trends, seasonal collections, and fashion heroes. We aim to inspire and
+          empower individuals through style and creativity.
+        </p>
+      </div>
+  
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trends.html">Trends</a></li>
+          <li><a href="collection.html">Collections</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section contact">
+        <h2>Contact Us</h2>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+          <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+          <li><i class="fas fa-envelope"></i> support@fashionexplorer.com</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fashion Explorer | All rights reserved.</p>
+    </div>
+  </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>

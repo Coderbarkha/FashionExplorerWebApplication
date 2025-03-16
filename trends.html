@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trends - Fashion Explorer</title>
+  <link rel="stylesheet" href="trendsstyle.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Fashion Explorer</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="trends.html" >Trends</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<br><br><br>
+  <!-- Trends Section -->
+  <main class="trends">
+    <h2>Latest Fashion Trends</h2>
+    <p>Stay ahead of the curve with the latest fashion trends and personalized recommendations.</p>
+    
+    <!-- Filters Section -->
+    <div class="filters">
+      <h3>Filter Trends</h3>
+      <select id="trend-filter">
+        <option value="all">All Trends</option>
+        <option value="streetwear">Streetwear</option>
+        <option value="luxury">Luxury</option>
+        <option value="casual">Casual</option>
+        <option value="vintage">Vintage</option>
+        <option value="sports">Sports Luxe</option>
+      </select>
+      <button onclick="applyFilter()">Apply Filter</button>
+    </div>
+    
+    <h3>Real-Time Fashion Trends</h3>
+    
+    <!-- Real Time Trends Section -->
+    <section class="real-time-trends">
+      <div class="trend-card" data-category="streetwear">
+        <img src="streetwear.webp" alt="Streetwear Trend">
+        <h4>Streetwear</h4>
+        <p>Urban styles with an edgy look, perfect for city life.</p>
+      </div>
+      <div class="trend-card" data-category="classic">
+        <img src="classic.webp" alt="Classic Fashion">
+        <h4>Classic</h4>
+        <p>Classic with a classy look.</p>
+      </div>
+      <div class="trend-card" data-category="luxury">
+        <img src="luxuryedition.webp" alt="Luxury Trend">
+        <h4>Luxury Fashion</h4>
+        <p>High-end fashion for those who love sophistication.</p>
+      </div>
+      <div class="trend-card" data-category="streetwear">
+        <img src="autumnelegance.webp" alt="Autumn Elegance">
+        <h4>Streetwear</h4>
+        <p>Autumn Elegance styles, perfect for city life.</p>
+      </div>
+      <div class="trend-card" data-category="winter">
+        <img src="winterwonder.webp" alt="Winter Elegance">
+        <h4>Winter Elegance</h4>
+        <p>Urban styles with an edgy look, perfect for city life.</p>
+      </div>
+      <div class="trend-card" data-category="vintage">
+        <img src="vintagevibes.webp" alt="Vintage Trend">
+        <h4>Vintage Vibes</h4>
+        <p>Step back in time with these retro-inspired styles.</p>
+      </div>
+      <div class="trend-card" data-category="summer">
+        <img src="summervibe.webp" alt="Summer Vibe">
+        <h4>Summervibe</h4>
+        <p>Summer Vibe Styles.</p>
+      </div>
+      <div class="trend-card" data-category="casual">
+        <img src="casualcomfort.webp" alt="Casual Comfort">
+        <h4>Casual Comfort</h4>
+        <p>Casual look, perfect for city life.</p>
+      </div>
+    </section>
+
+    <!-- Personalization Dashboard Section -->
+    <section class="personalization-dashboard">
+      <h3>Your Personalized Trends</h3>
+      <p>Sign in to get personalized recommendations based on your style preferences.</p>
+      <button onclick="personalizeTrends()">Sign In</button>
+    </section>
+  </main>
+<br><br><br><br><br>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>About Us</h2>
+        <p>
+          Fashion Explorer is your ultimate destination for exploring the latest
+          trends, seasonal collections, and fashion heroes. We aim to inspire and
+          empower individuals through style and creativity.
+        </p>
+      </div>
+  
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trends.html">Trends</a></li>
+          <li><a href="collection.html">Collections</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section contact">
+        <h2>Contact Us</h2>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+          <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+          <li><i class="fas fa-envelope"></i> support@fashionexplorer.com</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fashion Explorer | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function applyFilter() {
+      const filter = document.getElementById('trend-filter').value;
+      const trends = document.querySelectorAll('.trend-card');
+      
+      trends.forEach(trend => {
+        if (filter === 'all' || trend.getAttribute('data-category') === filter) {
+          trend.style.display = 'block';
+        } else {
+          trend.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  
+</body>
+</html>
